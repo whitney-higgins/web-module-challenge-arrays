@@ -102,8 +102,10 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/) {
-  /*your code here*/
+function removeLastFlavor(array) {
+  array.pop();
+
+  return array;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -117,9 +119,13 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/) {
-  /*your code here*/
+function getFlavorByIndex(array, flavorIdx) {
+
+ return array[flavorIdx]
+
 }
+
+getFlavorByIndex(originalFlavors, 10);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that single flavor from the array.  
@@ -135,9 +141,12 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/) {
-  /*your code here*/
+function removeFlavorByName(array, flavorName) {
+
+  
 }
+
+removeFlavorByName(originalFlavors, 'Peach')
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
