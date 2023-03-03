@@ -108,6 +108,8 @@ function removeLastFlavor(array) {
   return array;
 }
 
+removeLastFlavor(originalFlavors);
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
 
@@ -120,9 +122,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex(array, flavorIdx) {
-
- return array[flavorIdx]
-
+  return array[flavorIdx];
 }
 
 getFlavorByIndex(originalFlavors, 10);
@@ -142,11 +142,15 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, flavorName) {
-
-  
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === flavorName) {
+      array.splice(i, 1);
+    }
+  }
+  return array;
 }
 
-removeFlavorByName(originalFlavors, 'Peach')
+removeFlavorByName(originalFlavors, "Rocky Road");
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
